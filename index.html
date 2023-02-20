@@ -9,9 +9,17 @@
   </head>
   <body>
     <div class="buttons">
-      <button onclick="moveCubeLeft()">mover câmera</button>
       <button onclick="resetCube()">resetar cubo</button>
+      <div class="movebuttons">
+        <button onclick="moveCube(0.1, 0, 0)">esquerda</button>
+        <div>
+          <button onclick="moveCube(0, -0.1, 0)">cima</button>
+          <button onclick="moveCube(0, 0.1, 0)">baixo</button>
+        </div>
+        <button onclick="moveCube(-0.1, 0, 0)">direita</button>
+      </div>
       <input value="#ff00ff" type="color" id="cubeColor"/>
+      <input value="#000000" type="color" id="lineColor"/>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
     <script src="script.js"></script>

@@ -8,5 +8,17 @@ body {
     top: 15px;
     left: 15px;
     display: flex;
+    gap: 10px;
+    align-items: center;
     flex-wrap: wrap;
+}
+.movebuttons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.movebuttons>div{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
 }
